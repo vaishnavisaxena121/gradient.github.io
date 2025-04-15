@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        h1{
+            padding: 50px;
+            color: #fff;
+            font-size: 48px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #4861ec;
+            box-shadow: 0 0 0 15px #353f6d;
+            margin: 50px;
+            display: inline-block;
+            border-radius: 50%;
+            animation-name: trip;
+            animation-duration: 2.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+         } @keyframes trip {
+            from {
+                translate: 0%;
+            }
+            to {
+                translate: 50vw;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class=""container>
+        <h1>css animation</h1>
+        <div class="box">
+
+        </div>
+
+    </div>
+</body>
+</html>
